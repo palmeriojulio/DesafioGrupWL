@@ -9,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.validator.constraints.br.CPF;
+
 @Entity
 public class Pessoa implements Serializable {
 
@@ -21,7 +23,8 @@ public class Pessoa implements Serializable {
 	@Column(nullable = false)
 	private String nome;	
 	
-	@Column(nullable = false, unique = true, length = 11)
+	@CPF
+	@Column(nullable = false, unique = true, length = 14)
 	private String cpf;
 	
 	@Column(nullable = false, unique = true, length = 25)

@@ -15,7 +15,7 @@ export class AdicionarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Salvar(pessoa:Pessoa){
+  Salvar(pessoa: any) {
      this.service.createPessoa(pessoa)
      .subscribe(data=>{
        alert("Pessoa salva com sucesso!");

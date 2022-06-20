@@ -1,6 +1,10 @@
 export class Pessoa{
-  id:number | undefined
-  nome:String | undefined
-  cpf:String | undefined
-  opcao:String | undefined
+
+  constructor(
+    public id: number,
+    public nome: String,
+    public cpf: String,
+    public opcao: String
+    ){}
+
 }

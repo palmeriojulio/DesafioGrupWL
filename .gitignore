@@ -35,3 +35,4 @@ build/
 
 .metadata
 /api-frontend/node_modules
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
